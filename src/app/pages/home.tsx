@@ -35,7 +35,7 @@ export class HomeComponent extends Vue {
           </ion-header>
           <ion-content>
             <ion-list>
-              <ion-list-header>{this.text}</ion-list-header>
+              <ion-list-header v-show={this.text}>{this.text}</ion-list-header>
               <ion-item>
                 <ion-button color="secondary" onClick={() => this.$router.push('not-found-url')}>
                   Go to Not Found Page
@@ -49,7 +49,7 @@ export class HomeComponent extends Vue {
               </ion-item>
               <ion-item>
                 <ion-label stacked>Text Input</ion-label>
-                <ion-input domPropsValue={this.text} onInput={e => this.text = e.target.value} />
+                <ion-input value={this.text} onInput={e => this.text = e.target.value} />
               </ion-item>
               <ion-list-header>Text letters</ion-list-header>
               {this.text.split('').map((l, i) => <ion-item key={i}>{l}</ion-item>)}
