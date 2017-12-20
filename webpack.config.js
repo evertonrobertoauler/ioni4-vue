@@ -1,7 +1,6 @@
 const { join } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const nodeExternals = require('webpack-node-externals');
 const { DefinePlugin } = require('webpack');
 
 module.exports = (env) => ({
