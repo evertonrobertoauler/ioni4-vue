@@ -11,7 +11,7 @@ export class NotFoundComponent extends Vue {
             <ion-toolbar color="primary">
               <ion-title>
                 Not Found
-          </ion-title>
+              </ion-title>
             </ion-toolbar>
           </ion-header>
           <ion-content>
