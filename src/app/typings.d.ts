@@ -1,4 +1,4 @@
-/// <reference path="../../node_modules/@ionic/core/dist/collection/components.d.ts" />
+/// <reference path="../../node_modules/@ionic/core/dist/types/components.d.ts" />
 
 import Vue, { VNode } from "vue";
 

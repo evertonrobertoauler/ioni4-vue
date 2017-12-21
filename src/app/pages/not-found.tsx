@@ -17,7 +17,7 @@ export class NotFoundComponent extends Vue {
           <ion-content>
             <ion-list>
               <ion-item>
-                <ion-button color="secondary" onClick={() => this.$router.push({ name: 'home' })}>
+                <ion-button color="secondary" size="large" onClick={() => this.$router.push({ name: 'home' })}>
                   Go back to Home Page
                 </ion-button>
               </ion-item>

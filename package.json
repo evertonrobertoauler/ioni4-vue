@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "rm -rf dist && mkdir -p dist/build && cp -rf node_modules/@ionic/core/dist/ionic dist/build",
+    "postinstall": "rm -rf dist && mkdir -p dist && cp -rf node_modules/@ionic/core/dist/ionic dist",
     "start": "webpack-dev-server --env.NODE_ENV=development",
     "start:prod": "run-s build gzip server",
     "build": "webpack -p",
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ionic/core": "0.0.2-30",
+    "@ionic/core": "^0.0.2-31",
     "vue": "^2.5.11",
     "vue-class-component": "^6.1.2",
     "vue-router": "^3.0.1"

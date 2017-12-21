@@ -37,12 +37,12 @@ export class HomeComponent extends Vue {
             <ion-list>
               <ion-list-header v-show={this.text}>{this.text}</ion-list-header>
               <ion-item>
-                <ion-button color="secondary" onClick={() => this.$router.push('not-found-url')}>
+                <ion-button color="secondary" size="large" onClick={() => this.$router.push('not-found-url')}>
                   Go to Not Found Page
                 </ion-button>
               </ion-item>
               <ion-item>
-                <ion-button color="primary" onClick={() => this.showAlert()}>
+                <ion-button color="primary" size="large" onClick={() => this.showAlert()}>
                   Show Alert
                 </ion-button>
                 <ion-alert-controller ref="alertCtrl" />
