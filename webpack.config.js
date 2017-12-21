@@ -10,12 +10,13 @@ module.exports = (env) => ({
     path: join(process.cwd(), 'dist'),
     filename: '[name].[chunkhash].js'
   },
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: join(process.cwd(), "dist"),
     port: 9000
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx'],
+    extensions: ['.js', '.ts', '.tsx', '.d.ts'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }
