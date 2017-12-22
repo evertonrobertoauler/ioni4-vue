@@ -4,6 +4,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import '@ionic/core/dist/ionic';
+import '@ionic/core/dist/types/components';
 
 import { AppComponent } from './app'
 import { HomeComponent } from './pages/home'
