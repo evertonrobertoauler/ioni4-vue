@@ -13,21 +13,7 @@ Vue.use(VueRouter)
 
 Vue.config.productionTip = false;
 
-Vue.config.ignoredElements = [
-  'ion-app',
-  'ion-page',
-  'ion-header',
-  'ion-toolbar',
-  'ion-title',
-  'ion-button',
-  'ion-alert-controller',
-  'ion-content',
-  'ion-list',
-  'ion-list-header',
-  'ion-item',
-  'ion-label',
-  'ion-input',
-];
+Vue.config.ignoredElements = [/^ion-/];
 
 const router = new VueRouter({
   routes: [

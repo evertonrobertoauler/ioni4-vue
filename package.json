@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "rm -rf dist && mkdir -p dist && cp -rf node_modules/@ionic/core/dist/ionic dist",
-    "start": "webpack-dev-server --env.NODE_ENV=development",
+    "start": "webpack-dev-server --env.NODE_ENV=development --open",
     "start:prod": "run-s build gzip server",
     "build": "webpack -p",
     "gzip": "find dist -type f | grep -E '.(js|html|css)$' | xargs gzip -kf",
